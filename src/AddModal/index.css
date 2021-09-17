@@ -1,0 +1,33 @@
+.add-button{
+  background-color: #587DFF;
+  color: white;
+  font-size: 30px;
+  border-radius: 100%;
+  width: 60px;
+  aspect-ratio: 1;
+  border: none;
+  box-shadow: 4px 4px 10px 3px rgba(0,0,0,.25);
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.add-modal{
+  background-color: rgba(0,0,0,.33);
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.add-modal-content{
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 20px;
+}

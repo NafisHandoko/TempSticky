@@ -1,0 +1,18 @@
+.note{
+  min-width: 170px;
+  max-width: 200px;
+  aspect-ratio: 1;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+}
+
+.yellow{
+  background-color: #FFEBAE;
+}
+
+.red{
+  background-color: #FFDBDB;
+}
+
+.green{
+  background-color: #D8FFDC;
+}

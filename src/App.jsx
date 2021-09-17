@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <Nav/>
-      <Note title="tesaja" body="halohalohalo" bgcolor="yellow"/>
+      <div class="body-container">
+        <Note title="tesaja" body="halohalohalo" bgcolor="yellow"/>
+        <Note title="halo dunia" body="ini noteku yang lain" bgcolor="green"/>
+      </div>
     </>
   );
 }

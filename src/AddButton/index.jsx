@@ -4,9 +4,9 @@ import './index.css';
 class AddButton extends Component{
   render(){
     return(
-      <button>+</button>
+      <button className="add-button"><ion-icon name="add"></ion-icon></button>
     )
   }
 }
 
-default export AddButton;
+export default AddButton;

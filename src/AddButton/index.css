@@ -1,0 +1,10 @@
+.add-button{
+  background-color: #587DFF;
+  color: white;
+  font-size: 30px;
+  border-radius: 100%;
+  width: 60px;
+  aspect-ratio: 1;
+  border: none;
+  box-shadow: 4px 4px 10px 3px rgba(0,0,0,.25);
+}

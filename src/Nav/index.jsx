@@ -5,7 +5,7 @@ class Nav extends Component{
   render(){
     return(
       <nav>
-        <div class="nav-container">
+        <div className="nav-container">
           <h1>TempSticky</h1>
           <ul>
             <li><a href="#">About</a></li>

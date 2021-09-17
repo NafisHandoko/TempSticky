@@ -3,16 +3,19 @@
   max-width: 200px;
   aspect-ratio: 1;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+  /* padding: 5px 20px 5px 20px; */
+  padding: 20px;
 }
 
-.yellow{
-  background-color: #FFEBAE;
+.note h2,p{
+  padding: 0;
+  margin: 0;
 }
 
-.red{
-  background-color: #FFDBDB;
+.note h2{
+  margin-bottom: 5px;
 }
 
-.green{
-  background-color: #D8FFDC;
-}
+.yellow{background-color: #FFEBAE;}
+.red{background-color: #FFDBDB;}
+.green{background-color: #D8FFDC;}

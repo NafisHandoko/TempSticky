@@ -7,4 +7,7 @@
   aspect-ratio: 1;
   border: none;
   box-shadow: 4px 4px 10px 3px rgba(0,0,0,.25);
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 }

@@ -33,7 +33,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  align-items: center;
 }
 
 
@@ -46,6 +46,8 @@
 .add-modal-btn-group{
   display: flex;
   flex-direction: row;
+  position: absolute;
+  bottom: -60%;
 }
 
 .add-modal-submit-button{
@@ -56,6 +58,7 @@
   aspect-ratio: 1;
   color: white;
   font-size: 20px;
+  margin: 5px;
 }
 
 .add-modal-cancel-button{
@@ -66,4 +69,5 @@
   aspect-ratio: 1;
   color: white;
   font-size: 20px;
+  margin: 5px;
 }

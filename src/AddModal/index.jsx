@@ -5,7 +5,11 @@ class AddModal extends Component{
   constructor(props){
     super(props);
     this.state = {
-      style: {display: 'none'}
+      style: {display: 'none'},
+      input: {
+        title: '',
+        note: ''
+      }
     }
     this.enableModal = () => {
       this.setState({
@@ -17,6 +21,15 @@ class AddModal extends Component{
         style: {display: 'none'}
       })
     }
+    this.handleChange = (event) => {
+      this.setState({
+        ...this.state,
+        input: {
+          ...this.state.input,
+          [event.target.id]: event.target.value
+        }
+      })
+    }
   }
   render(){
     return(
@@ -25,8 +38,8 @@ class AddModal extends Component{
         <div className="add-modal" style={this.state.style}>
           <form className="add-modal-box">
             <div className="add-modal-content">
-              <input className="add-modal-title-input" type="text" placeholder="add a title"/>
-              <textarea className="add-modal-note-input" placeholder="your notes here"></textarea>
+              <input id="title" className="add-modal-title-input" type="text" placeholder="add a title" value={this.state.input.title} onChange={this.handleChange}/>
+              <textarea id="note" className="add-modal-note-input" placeholder="your notes here" value={this.state.input.note} onChange={this.handleChange}></textarea>
             </div>
             <div className="add-modal-btn-group">
               <button type="button" className="add-modal-cancel-button" onClick={this.disableModal}><ion-icon name="close-sharp"></ion-icon></button>

@@ -23,14 +23,14 @@
   overflow: auto;
 }
 
-.add-modal-content{
+.add-modal-box{
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  width: 80%;
-  border-radius: 20px;
+  max-width: 200px;
   animation-name: modal-animate;
   animation-duration: 0.7s;
+  position: relative;
 }
 
 @keyframes modal-animate {
@@ -38,12 +38,29 @@
   to{scale: 1}
 }
 
-.add-modal-close-button{
+.add-modal-btn-group{
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  background-color: #587DFF;
+  left: 50%;
+}
+
+.add-modal-submit-button{
+  background-color: #55D271;
   border: none;
   border-radius: 100%;
-  width: 50px;
+  width: 40px;
   aspect-ratio: 1;
   color: white;
+  font-size: 20px;
+}
+
+.add-modal-cancel-button{
+  background-color: #FD6767;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  aspect-ratio: 1;
+  color: white;
+  font-size: 20px;
 }

@@ -29,4 +29,21 @@
   padding: 20px;
   width: 80%;
   border-radius: 20px;
+  animation-name: modal-animate;
+  animation-duration: 0.7s;
+}
+
+@keyframes modal-animate {
+  from{scale: 0.2}
+  to{scale: 1}
+}
+
+.add-modal-close-button{
+  position: absolute;
+  background-color: #587DFF;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  aspect-ratio: 1;
+  color: white;
 }

@@ -27,7 +27,7 @@ class AddModal extends Component{
             <h1>Welcome</h1>
             <p>Hello blababla it's just a test</p>
           </div>
-          <button onClick={this.disableModal}>Ok</button>
+          <button className="add-modal-close-button" onClick={this.disableModal}>Ok</button>
         </div>
       </>
     )

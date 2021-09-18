@@ -43,6 +43,7 @@
   box-sizing: border-box;
   margin-bottom: 15px;
   border: none;
+  font-family: inherit;
 }
 
 .add-modal-note-input{
@@ -50,6 +51,11 @@
   width: 100%;
   box-sizing: border-box;
   border: none;
+  font-family: inherit;
+}
+
+.add-modal-title-input:focus,.add-modal-note-input{
+  outline: none !important;
 }
 
 @keyframes modal-animate {

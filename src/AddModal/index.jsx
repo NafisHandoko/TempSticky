@@ -26,7 +26,7 @@ class AddModal extends Component{
           <form className="add-modal-box">
             <div className="add-modal-content">
               <input className="add-modal-title-input" type="text" placeholder="add a title"/>
-              <input className="add-modal-note-input" type="text" placeholder="your notes here"/>
+              <textarea className="add-modal-note-input" placeholder="your notes here"></textarea>
             </div>
             <div className="add-modal-btn-group">
               <button type="button" className="add-modal-cancel-button" onClick={this.disableModal}><ion-icon name="close-sharp"></ion-icon></button>

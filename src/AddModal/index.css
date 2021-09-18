@@ -36,7 +36,21 @@
   align-items: center;
 }
 
+.add-modal-title-input{
+  font-size: 1.5em;
+  font-weight: bolder;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: none;
+}
 
+.add-modal-note-input{
+  height: 170px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
 
 @keyframes modal-animate {
   from{scale: 0.2}
@@ -47,7 +61,7 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: -60%;
+  bottom: -25%;
 }
 
 .add-modal-submit-button{

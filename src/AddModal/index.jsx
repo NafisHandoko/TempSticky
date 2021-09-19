@@ -44,7 +44,7 @@ class AddModal extends Component{
               <button type="submit" className="add-modal-submit-button"><ion-icon name="checkmark-sharp"></ion-icon></button>
             </div>
             <div className="note-color-radio">
-              <input type="radio" name="notecolor" value="#FFEBAE" onClick={this.handleChange}/>
+              <input type="radio" name="notecolor" value="#FFEBAE" onClick={this.handleChange} defaultChecked/>
               <input type="radio" name="notecolor" value="#FFDBDB" onClick={this.handleChange}/>
               <input type="radio" name="notecolor" value="#D8FFDC" onClick={this.handleChange}/>
             </div>

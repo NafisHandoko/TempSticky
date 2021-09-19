@@ -35,7 +35,7 @@ class AddModal extends Component{
     }
     this.handleSubmit = (event) => {
       event.preventDefault();
-      this.props.handler('ini tesaja lho ya');
+      this.props.handler(this.state.input);
       this.displayModal();
     }
   }

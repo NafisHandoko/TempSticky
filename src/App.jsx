@@ -22,12 +22,23 @@ class App extends Component{
     super(props);
     this.state = {
       notedata: [
-        {id:"1", title:"tesaja", body:"halohalohalo", bgcolor:"yellow"},
-        {id:"2", title:"halo dunia", body:"ini noteku yang lain", bgcolor:"green"}
+        {id:1, title:"tesaja", body:"halohalohalo", bgcolor:"yellow"},
+        {id:2, title:"halo dunia", body:"ini noteku yang lain", bgcolor:"green"}
       ]
     }
     this.handleSubmit = (data) => {
-      console.log(data)
+      console.log(data);
+      this.setState({
+        notedata: [
+          ...this.state.notedata,
+          {
+            id: this.state.notedata.length+1,
+            title: data.title,
+            body: data.note,
+            bgcolor: data.notecolor
+          }
+        ]
+      })
     }
   }
   render(){

@@ -7,7 +7,7 @@ class Note extends Component{
       <div className={`note ${this.props.bgcolor}`}>
         <h2>{this.props.title}</h2>
         <p>{this.props.body}</p>
-        <button type="button" className="note-delete-button"><ion-icon name="trash" onClick={this.props.handler(this.props.id)}></ion-icon></button>
+        <button type="button" className="note-delete-button"><ion-icon name="trash" onClick={() => this.props.handler(this.props.id)}></ion-icon></button>
       </div>
     )
   }

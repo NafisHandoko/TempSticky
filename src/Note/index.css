@@ -5,6 +5,7 @@
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
   /* padding: 5px 20px 5px 20px; */
   padding: 20px;
+  position: relative;
 }
 
 .note h2,p{
@@ -19,3 +20,17 @@
 .yellow{background-color: var(--yellow-note-color);}
 .red{background-color: var(--red-note-color);}
 .green{background-color: var(--green-note-color);}
+
+.note-delete-button{
+  background-color: #FD6767;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  aspect-ratio: 1;
+  color: white;
+  font-size: 20px;
+  /* margin: 5px; */
+  position: absolute;
+  top: -5%;
+  right: -5%;
+}

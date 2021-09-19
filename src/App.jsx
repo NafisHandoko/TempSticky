@@ -26,6 +26,9 @@ class App extends Component{
         ]
       })
     }
+    this.deleteNote = (id) => {
+      console.log(id);
+    }
   }
   render(){
     const notedata = this.state.notedata;
@@ -34,7 +37,7 @@ class App extends Component{
         <Nav/>
         <div className="body-container">
           {notedata.map((data) =>
-            <Note key={data.id} title={data.title} body={data.body} bgcolor={data.bgcolor}/>
+            <Note key={data.id} id={data.id} title={data.title} body={data.body} bgcolor={data.bgcolor} handler={this.deleteNote}/>
           )}
           <AddModal handler={this.handleSubmit}/>
         </div>

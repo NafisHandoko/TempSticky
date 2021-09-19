@@ -11,14 +11,9 @@ class AddModal extends Component{
         note: ''
       }
     }
-    this.enableModal = () => {
+    this.displayModal = () => {
       this.setState({
-        style: {display: 'block'}
-      })
-    }
-    this.disableModal = () => {
-      this.setState({
-        style: {display: 'none'}
+        style: {display: this.state.style.display === 'none'?'block':'none'}
       })
     }
     this.handleChange = (event) => {
@@ -34,7 +29,7 @@ class AddModal extends Component{
   render(){
     return(
       <>
-        <button className="add-button" onClick={this.enableModal}><ion-icon name="add"></ion-icon></button>
+        <button className="add-button" onClick={this.displayModal}><ion-icon name="add"></ion-icon></button>
         <div className="add-modal" style={this.state.style}>
           <form className="add-modal-box">
             <div className="add-modal-content">
@@ -42,7 +37,7 @@ class AddModal extends Component{
               <textarea id="note" className="add-modal-note-input" placeholder="your notes here" value={this.state.input.note} onChange={this.handleChange}></textarea>
             </div>
             <div className="add-modal-btn-group">
-              <button type="button" className="add-modal-cancel-button" onClick={this.disableModal}><ion-icon name="close-sharp"></ion-icon></button>
+              <button type="button" className="add-modal-cancel-button" onClick={this.displayModal}><ion-icon name="close-sharp"></ion-icon></button>
               <button type="submit" className="add-modal-submit-button"><ion-icon name="checkmark-sharp"></ion-icon></button>
             </div>
           </form>

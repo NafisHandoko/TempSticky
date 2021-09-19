@@ -19,7 +19,7 @@ class AddModal extends Component{
         input: {
           title: '',
           note: '',
-          notecolor: 'yellow'
+          notecolor: this.state.input.notecolor
         },
         style: {display: this.state.style.display === 'none'?'block':'none'}
       })

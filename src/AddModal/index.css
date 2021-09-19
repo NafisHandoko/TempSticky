@@ -65,6 +65,16 @@
   to{scale: 1}
 }
 
+.yellow-radio{
+  background-color: var(--yellow-note-color);
+}
+.red-radio{
+  background-color: var(--red-note-color);
+}
+.green-radio{
+  background-color: var(--green-note-color);
+}
+
 .add-modal-btn-group{
   display: flex;
   flex-direction: row;

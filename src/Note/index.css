@@ -16,6 +16,6 @@
   margin-bottom: 15px;
 }
 
-.yellow{background-color: #FFEBAE;}
-.red{background-color: #FFDBDB;}
-.green{background-color: #D8FFDC;}
+.yellow{background-color: var(--yellow-note-color);}
+.red{background-color: var(--red-note-color);}
+.green{background-color: var(--green-note-color);}

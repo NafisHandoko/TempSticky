@@ -27,7 +27,9 @@ class App extends Component{
       })
     }
     this.deleteNote = (id) => {
-      console.log(id);
+      this.setState({
+        notedata: this.state.notedata.filter((item) => item.id !== id)
+      })
     }
   }
   render(){

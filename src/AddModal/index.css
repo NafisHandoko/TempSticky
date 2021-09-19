@@ -44,6 +44,7 @@
   margin-bottom: 15px;
   border: none;
   font-family: inherit;
+  background-color: transparent;
 }
 
 .add-modal-note-input{
@@ -52,6 +53,7 @@
   box-sizing: border-box;
   border: none;
   font-family: inherit;
+  background-color: transparent;
 }
 
 .add-modal-title-input:focus,.add-modal-note-input{

@@ -26,6 +26,9 @@ class App extends Component{
         {id:"2", title:"halo dunia", body:"ini noteku yang lain", bgcolor:"green"}
       ]
     }
+    this.handleSubmit = (data) => {
+      console.log(data)
+    }
   }
   render(){
     const notedata = this.state.notedata;
@@ -36,7 +39,7 @@ class App extends Component{
           {notedata.map((data) =>
             <Note key={data.id} title={data.title} body={data.body} bgcolor={data.bgcolor}/>
           )}
-          <AddModal/>
+          <AddModal handler={this.handleSubmit}/>
         </div>
       </>
     )

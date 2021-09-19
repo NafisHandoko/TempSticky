@@ -16,6 +16,11 @@ class AddModal extends Component{
     }
     this.displayModal = () => {
       this.setState({
+        input: {
+          title: '',
+          note: '',
+          notecolor: '#FFEBAE'
+        },
         style: {display: this.state.style.display === 'none'?'block':'none'}
       })
     }
@@ -28,13 +33,18 @@ class AddModal extends Component{
         }
       })
     }
+    this.handleSubmit = (event) => {
+      event.preventDefault();
+      this.props.handler('ini tesaja lho ya');
+      this.displayModal();
+    }
   }
   render(){
     return(
       <>
         <button className="add-button" onClick={this.displayModal}><ion-icon name="add"></ion-icon></button>
         <div className="add-modal" style={this.state.style}>
-          <form className="add-modal-box" style={{backgroundColor: this.state.input.notecolor}}>
+          <form className="add-modal-box" style={{backgroundColor: this.state.input.notecolor}} onSubmit={this.handleSubmit}>
             <div className="add-modal-content">
               <input name="title" className="add-modal-title-input" type="text" placeholder="add a title" value={this.state.input.title} onChange={this.handleChange}/>
               <textarea name="note" className="add-modal-note-input" placeholder="your notes here" value={this.state.input.note} onChange={this.handleChange}></textarea>

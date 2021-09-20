@@ -1,49 +1,22 @@
 import React,{Component} from 'react';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import './App.css';
 import Nav from './Nav/index';
-import Note from './Note/index';
-import AddModal from './AddModal/index';
+import Home from './Home/index';
+
 
 class App extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      notedata: [
-        {id:1, title:"tesaja", body:"halohalohalo", bgcolor:"yellow"},
-        {id:2, title:"halo dunia", body:"ini noteku yang lain", bgcolor:"green"}
-      ]
-    }
-    this.handleSubmit = (data) => {
-      this.setState({
-        notedata: [
-          ...this.state.notedata,
-          {
-            id: this.state.notedata.length+1,
-            title: data.title,
-            body: data.note,
-            bgcolor: data.notecolor
-          }
-        ]
-      })
-    }
-    this.deleteNote = (id) => {
-      this.setState({
-        notedata: this.state.notedata.filter((item) => item.id !== id)
-      })
-    }
-  }
   render(){
-    const notedata = this.state.notedata;
     return(
-      <>
+      <Router>
         <Nav/>
-        <div className="body-container">
-          {notedata.map((data) =>
-            <Note key={data.id} id={data.id} title={data.title} body={data.body} bgcolor={data.bgcolor} handler={this.deleteNote}/>
-          )}
-          <AddModal handler={this.handleSubmit}/>
-        </div>
-      </>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path="*">
+            <Redirect to="/" />
+          </Route>
+        </Switch>
+      </Router>
     )
   }
 }

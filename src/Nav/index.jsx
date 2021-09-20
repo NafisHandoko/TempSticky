@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 class Nav extends Component{
@@ -6,7 +7,7 @@ class Nav extends Component{
     return(
       <nav>
         <div className="nav-container">
-          <h1>TempSticky</h1>
+          <Link to={'/'} className="nav-link"><h1>TempSticky</h1></Link>
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Repo</a></li>

@@ -9,7 +9,7 @@ class Nav extends Component{
         <div className="nav-container">
           <Link to={'/'} className="nav-link"><h1>TempSticky</h1></Link>
           <ul>
-            <li><a href="#">About</a></li>
+            <li><Link to={'/about'} className="nav-link">About</Link></li>
             <li><a href="#">Repo</a></li>
           </ul>
         </div>

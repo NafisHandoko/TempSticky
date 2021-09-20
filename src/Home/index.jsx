@@ -34,14 +34,12 @@ class Home extends Component{
   render(){
     const notedata = this.state.notedata;
     return(
-      <>
-        <div className="body-container">
-          {notedata.map((data) =>
-            <Note key={data.id} id={data.id} title={data.title} body={data.body} bgcolor={data.bgcolor} handler={this.deleteNote}/>
+      <div className="body-container">
+        {notedata.map((data) =>
+          <Note key={data.id} id={data.id} title={data.title} body={data.body} bgcolor={data.bgcolor} handler={this.deleteNote}/>
           )}
-          <AddModal handler={this.handleSubmit}/>
-        </div>
-      </>
+        <AddModal handler={this.handleSubmit}/>
+      </div>
     )
   }
 }
